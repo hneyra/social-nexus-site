@@ -7,8 +7,9 @@ exploration phase, with a social-management focus). Content is in Spanish. Publi
 
 ## Layout
 
-- `site/` — everything that is published. `index.html` + `style.css` is the main design (A);
-  `v2/` and `v3/` are alternative designs (B, C) with their own `style.css`.
+- `site/` — everything that is published. `index.html` + `style.css` is the production design
+  ("Modern Industrial Corporate"); `v1/`, `v2/`, `v3/` keep the earlier proposals A, B, C (noindex).
+- `site/assets/fonts/` — self-hosted Archivo + Public Sans (woff2, latin subset).
 - `site/assets/icons.svg` — shared SVG sprite; `site/assets/img/` — images (webp).
 - `.github/workflows/pages.yml` — uploads `site/` and deploys to GitHub Pages on push to `main`.
 
@@ -18,5 +19,7 @@ exploration phase, with a social-management focus). Content is in Spanish. Publi
 - Scripts stay vanilla and inline at the bottom of each `index.html`.
 - Theme colors are CSS custom properties at the top of each `style.css`
   (brand: blue `#36538A`; logo accents red `#E2231A`, orange `#F39200`, yellow `#FFC20E`, green `#4BA82E`).
+  In the main design the logo accents are only a brand signature; gold `--gold` is the action color.
+- Do not invent business facts (clients, figures, certifications, years) in site copy.
 - Use relative paths only (the site is served under `/social-nexus-site/`).
 - The contact forms have no backend: they open WhatsApp (`wa.me/51943250843`) with the message pre-filled.

@@ -8,18 +8,28 @@ con enfoque en gestión social, seguridad y cuidado del medio ambiente.
 
 ```
 site/                 # todo lo que se publica (HTML/CSS estático, sin build)
-├── index.html        # Versión A · "Institucional moderna" (principal)
-├── style.css
-├── v2/               # Versión B · "Territorio y comunidad" (cálida, editorial)
-├── v3/               # Versión C · "Operaciones en campo" (oscura, técnica)
+├── index.html        # Diseño definitivo · "Modern Industrial Corporate"
+├── style.css         # sistema de diseño (tokens en :root) + estilos
+├── v1/ v2/ v3/       # propuestas anteriores A, B y C (referencia, noindex)
+├── assets/fonts/     # Archivo + Public Sans auto-alojadas (woff2, latin, OFL)
 ├── assets/icons.svg  # sprite de iconos SVG compartido
-└── assets/img/       # fotos y logo extraídos del brochure (webp)
+└── assets/img/       # fotos (webp, con variantes -960 para srcset), logo, imagen OG
 .github/workflows/pages.yml   # despliegue a GitHub Pages
 ```
 
-Las tres versiones comparten contenido (brochure) e imágenes; cada una tiene su
-propio `style.css`. En el pie de cada página hay un selector **Diseño: A · B · C**
-para compararlas. B y C llevan `noindex` mientras sean propuestas.
+### Sistema de diseño (resumen)
+
+- **Tipografía**: Archivo (titulares, etiquetas, botones) + Public Sans (texto).
+- **Color**: navy `#112038` / azul institucional `#36538A` como base; papel `#F7F5F0`
+  y grafito para superficies y texto; dorado `#E8A814` solo para la acción principal
+  y marcadores; verde `#3A7F2A` para sostenibilidad y comunidad. Los colores del
+  logo aparecen solo como firma (línea segmentada del footer y el hero).
+- **Componentes**: `.label`, `.btn` (`-primary`, `-accent`, `-ghost`, `-ghost-light`),
+  `.link-arrow`, `.service` (`--feature`, `--compact`), `.field` con estados de validación.
+- **Breakpoints**: 600 · 700 · 768 · 960/1024 · 1080 (navegación de escritorio) · 1440.
+
+El selector público de versiones A/B/C se retiró del diseño definitivo; las
+propuestas anteriores siguen accesibles en `/v1/`, `/v2/` y `/v3/` con `noindex`.
 
 ## Ver en local
 
