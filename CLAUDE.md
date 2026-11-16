@@ -8,7 +8,8 @@ exploration phase, with a social-management focus). Content is in Spanish. Publi
 ## Layout
 
 - `site/` — everything that is published. `index.html` + `style.css` is the production design
-  ("Modern Industrial Corporate"); `v1/`, `v2/`, `v3/` keep the earlier proposals A, B, C (noindex).
+  (proposal A); `v2/` (B, editorial) and `v3/` (C, dark technical) are full alternative proposals;
+  `comparar/` compares A/B/C; `v1/` archives the first version of A. All but the root are noindex.
 - `site/assets/fonts/` — self-hosted Archivo + Public Sans (woff2, latin subset).
 - `site/assets/icons.svg` — shared SVG sprite; `site/assets/img/` — images (webp).
 - `.github/workflows/pages.yml` — uploads `site/` and deploys to GitHub Pages on push to `main`.

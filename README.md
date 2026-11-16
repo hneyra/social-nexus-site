@@ -8,10 +8,14 @@ con enfoque en gestión social, seguridad y cuidado del medio ambiente.
 
 ```
 site/                 # todo lo que se publica (HTML/CSS estático, sin build)
-├── index.html        # Diseño definitivo · "Modern Industrial Corporate"
-├── style.css         # sistema de diseño (tokens en :root) + estilos
-├── v1/ v2/ v3/       # propuestas anteriores A, B y C (referencia, noindex)
-├── assets/fonts/     # Archivo + Public Sans auto-alojadas (woff2, latin, OFL)
+├── index.html        # Propuesta A · "Corporativa industrial" (publicada en la raíz)
+├── style.css         # sistema de diseño de A (tokens en :root) + estilos
+├── v2/               # Propuesta B · "Territorio y comunidad" (editorial, noindex)
+├── v3/               # Propuesta C · "Operaciones en campo" (oscura y técnica, noindex)
+├── comparar/         # página interna para comparar A, B y C (noindex)
+├── v1/               # versión inicial de A, solo como referencia (noindex)
+├── assets/fonts/     # fuentes auto-alojadas (woff2, latin, OFL): Archivo, Public Sans,
+│                     #   Newsreader (B), IBM Plex Sans y Plex Mono (C)
 ├── assets/icons.svg  # sprite de iconos SVG compartido
 └── assets/img/       # fotos (webp, con variantes -960 para srcset), logo, imagen OG
 .github/workflows/pages.yml   # despliegue a GitHub Pages
@@ -28,8 +32,9 @@ site/                 # todo lo que se publica (HTML/CSS estático, sin build)
   `.link-arrow`, `.service` (`--feature`, `--compact`), `.field` con estados de validación.
 - **Breakpoints**: 600 · 700 · 768 · 960/1024 · 1080 (navegación de escritorio) · 1440.
 
-El selector público de versiones A/B/C se retiró del diseño definitivo; las
-propuestas anteriores siguen accesibles en `/v1/`, `/v2/` y `/v3/` con `noindex`.
+Para comparar las tres propuestas abrir `/comparar/` (p. ej.
+`https://hneyra.github.io/social-nexus-site/comparar/`). B y C enlazan a esa página
+desde su pie; A (producción) no muestra ningún selector de versiones.
 
 ## Ver en local
 
