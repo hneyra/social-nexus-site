@@ -1,253 +1,544 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Social Nexus | Operaciones en campo</title>
-  <meta name="description" content="Social Nexus: movimiento de tierras, maquinaria, camionetas 4x4, seguridad y servicios sanitarios para la exploración minera en el Perú.">
+  <title>Social Nexus E.I.R.L. | Operaciones en campo para la exploración minera — Propuesta C</title>
+  <meta name="description" content="Social Nexus E.I.R.L.: movimiento de tierras, alquiler de maquinaria, camionetas 4x4, protección y seguridad y servicios sanitarios para la exploración minera, con gestión social y cuidado ambiental.">
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#0B1426">
-  <meta property="og:title" content="Social Nexus | ¡Conectando realidades!">
-  <meta property="og:description" content="Operación integral en campo para proyectos de exploración minera.">
-  <meta property="og:image" content="../assets/img/movimiento-tierras.jpg">
+  <meta name="theme-color" content="#0A1322">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PE">
+  <meta property="og:title" content="Social Nexus | Operaciones en campo para la exploración minera">
+  <meta property="og:description" content="Servicios integrales para la fase de exploración minera, con gestión social, seguridad y cuidado del medio ambiente.">
+  <meta property="og:image" content="https://hneyra.github.io/social-nexus-site/assets/img/og-social-nexus.jpg">
   <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="../assets/fonts/ibm-plex-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/ibm-plex-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="../assets/img/movimiento-tierras.webp" imagesrcset="../assets/img/movimiento-tierras-960.webp 960w, ../assets/img/movimiento-tierras.webp 1600w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <header class="hdr">
-    <div class="wrap">
-      <a href="#inicio" class="mark" aria-label="Social Nexus – inicio"><img src="../assets/img/logo-simbolo.png" alt="" width="270" height="183">Social<span>Nexus</span></a>
-      <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-menu"/></svg></button>
+  <!-- ================= HEADER ================= -->
+  <header class="hdr" id="hdr">
+    <div class="wrap hdr-inner">
+      <a href="#inicio" class="brand" aria-label="Social Nexus E.I.R.L. – ir al inicio">
+        <span class="brand-plate"><img src="../assets/img/logo-simbolo.webp" alt="" width="270" height="183"></span>
+        <span class="brand-text">
+          <span class="brand-name">Social Nexus</span>
+          <span class="brand-tag">¡Conectando realidades!</span>
+        </span>
+      </a>
+
       <nav class="nav" id="nav" aria-label="Principal">
-        <ul>
-          <li><a href="#empresa">Empresa</a></li>
-          <li><a href="#flota">Servicios</a></li>
-          <li><a href="#valores">Valores</a></li>
-          <li><a href="#contacto" class="btn btn-y">Cotizar</a></li>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li><a class="nav-link" href="#enfoque">Enfoque</a></li>
+          <li><a class="nav-link" href="#empresa">Empresa</a></li>
+          <li><a class="nav-link" href="#valores">Valores</a></li>
+          <li><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
+        <div class="nav-extra">
+          <a href="#contacto" class="btn btn-y nav-cta">Solicitar cotización</a>
+          <ul class="nav-contact">
+            <li><a href="tel:+51943250843">+51 943 250 843</a></li>
+            <li><a href="mailto:socialnexeirl@gmail.com">socialnexeirl@gmail.com</a></li>
+          </ul>
+        </div>
       </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
+        <span class="nav-toggle-label">Menú</span>
+        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="inicio">
-      <div class="hero-img"><img src="../assets/img/movimiento-tierras.webp" alt="" width="1600" height="908"></div>
-      <div class="coords" aria-hidden="true">TRUJILLO · LA LIBERTAD · PERÚ<br>8°06′S 79°01′W</div>
+  <main id="contenido">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-bg">
+        <img src="../assets/img/movimiento-tierras.webp"
+             srcset="../assets/img/movimiento-tierras-960.webp 960w, ../assets/img/movimiento-tierras.webp 1600w"
+             sizes="100vw"
+             alt="Excavadora realizando movimiento de tierras en una cantera, junto a un supervisor de campo"
+             width="1600" height="908" fetchpriority="high">
+      </div>
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Servicios integrales · Exploración minera</p>
+        <h1 id="hero-title" class="hero-title">Conectamos la minería con el territorio y su gente.</h1>
+        <p class="hero-lead">Operación técnica y logística, seguridad, atención sanitaria y gestión social para la fase de exploración: un solo aliado en campo, con respeto por las comunidades y el medio ambiente.</p>
+        <div class="hero-actions">
+          <a href="#servicios" class="btn btn-y">Ver líneas de servicio
+            <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
+          <a href="#contacto" class="btn btn-line">Solicitar cotización</a>
+        </div>
+      </div>
+
+      <!-- Franja de líneas de servicio -->
+      <nav class="lines" aria-label="Líneas de servicio">
+        <ol class="wrap lines-list">
+          <li><a href="#sn-01"><span class="code">SN-01</span><span>Movimiento de tierras</span></a></li>
+          <li><a href="#sn-02"><span class="code">SN-02</span><span>Alquiler de maquinaria</span></a></li>
+          <li><a href="#sn-03"><span class="code">SN-03</span><span>Camionetas 4x4</span></a></li>
+          <li><a href="#sn-04"><span class="code">SN-04</span><span>Protección y seguridad</span></a></li>
+          <li><a href="#sn-05"><span class="code">SN-05</span><span>Servicios sanitarios</span></a></li>
+        </ol>
+      </nav>
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="section services" id="servicios" aria-labelledby="services-title">
       <div class="wrap">
-        <span class="label">Servicios integrales · Exploración minera</span>
-        <h1>Operamos<br>donde <span class="y">empieza</span><br><span class="stroke">la minería.</span></h1>
-        <div class="hero-row">
-          <p>Movimiento de tierras, maquinaria, transporte 4x4, seguridad y atención sanitaria en campo, con buenas relaciones con la comunidad y respeto por el medio ambiente.</p>
-          <div class="ctas">
-            <a href="#flota" class="btn btn-y">Ver capacidades <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
-            <a href="#contacto" class="btn btn-line">Contacto</a>
+        <header class="head head--split reveal">
+          <div>
+            <p class="eyebrow">Servicios y capacidades</p>
+            <h2 id="services-title" class="h2">Capacidad operativa para cada etapa del trabajo de campo.</h2>
           </div>
+          <p class="intro">Cinco líneas de servicio que operan de forma independiente o integrada, conforme a los estándares exigidos por las empresas mineras.</p>
+        </header>
+
+        <div class="sheets">
+          <!-- SN-01 -->
+          <article class="sheet sheet--lead reveal" id="sn-01" aria-labelledby="sn-01-t">
+            <figure class="sheet-media">
+              <img src="../assets/img/retroexcavadora-carga-960.webp"
+                   srcset="../assets/img/retroexcavadora-carga-960.webp 960w, ../assets/img/retroexcavadora-carga.webp 1600w"
+                   sizes="(min-width: 1024px) 58vw, 100vw"
+                   alt="Retroexcavadora descargando material para la habilitación de un acceso"
+                   width="1600" height="1288" loading="lazy" decoding="async">
+            </figure>
+            <div class="sheet-body">
+              <p class="sheet-code"><span>SN-01</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-mountain"/></svg></p>
+              <h3 id="sn-01-t" class="sheet-title">Movimiento de tierras</h3>
+              <p class="sheet-text">Habilitación de accesos, plataformas y explanaciones para campamentos y sondajes, con operadores calificados y supervisión permanente.</p>
+              <dl class="spec">
+                <div><dt>Alcance</dt><dd>Accesos, plataformas y explanaciones</dd></div>
+                <div><dt>Aplicación</dt><dd>Campamentos y sondajes</dd></div>
+                <div><dt>Personal</dt><dd>Operadores calificados</dd></div>
+                <div><dt>Control</dt><dd>Supervisión permanente</dd></div>
+              </dl>
+              <a href="#contacto" class="more" data-service="Movimiento de tierras">Cotizar SN-01 <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- SN-02 -->
+          <article class="sheet sheet--wide reveal" id="sn-02" aria-labelledby="sn-02-t">
+            <figure class="sheet-media">
+              <img src="../assets/img/rodillo-960.webp"
+                   srcset="../assets/img/rodillo-960.webp 960w, ../assets/img/rodillo.webp 1600w"
+                   sizes="(min-width: 1024px) 56vw, 100vw"
+                   alt="Rodillo compactador trabajando en la habilitación de una vía"
+                   width="1600" height="1142" loading="lazy" decoding="async">
+            </figure>
+            <div class="sheet-body">
+              <p class="sheet-code"><span>SN-02</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-excavator"/></svg></p>
+              <h3 id="sn-02-t" class="sheet-title">Alquiler de maquinaria</h3>
+              <p class="sheet-text">Equipo pesado disponible para obras de exploración, mantenimiento de vías y abastecimiento de agua en campo.</p>
+              <dl class="spec">
+                <div><dt>Equipos</dt><dd>Motoniveladora · Retroexcavadora · Excavadora · Rodillo</dd></div>
+                <div><dt>Agua</dt><dd>Cisterna de agua</dd></div>
+                <div><dt>Uso</dt><dd>Obras de exploración y mantenimiento de vías</dd></div>
+              </dl>
+              <a href="#contacto" class="more" data-service="Alquiler de maquinaria">Cotizar SN-02 <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- SN-03 -->
+          <article class="sheet sheet--narrow reveal" id="sn-03" aria-labelledby="sn-03-t">
+            <figure class="sheet-media">
+              <img src="../assets/img/camioneta-playa.webp"
+                   alt="Camioneta 4x4 blanca equipada con barra antivuelco"
+                   width="599" height="402" loading="lazy" decoding="async">
+            </figure>
+            <div class="sheet-body">
+              <p class="sheet-code"><span>SN-03</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-truck"/></svg></p>
+              <h3 id="sn-03-t" class="sheet-title">Camionetas 4x4</h3>
+              <p class="sheet-text">Unidades equipadas para un transporte eficiente en actividades de exploración, conforme a los estándares más exigentes de las empresas mineras.</p>
+              <dl class="spec">
+                <div><dt>Tracción</dt><dd>4x4</dd></div>
+                <div><dt>Equipamiento</dt><dd>Barra antivuelco y elementos de seguridad</dd></div>
+              </dl>
+              <a href="#contacto" class="more" data-service="Alquiler de camionetas 4x4">Cotizar SN-03 <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- SN-04 -->
+          <article class="sheet sheet--narrow reveal" id="sn-04" aria-labelledby="sn-04-t">
+            <figure class="sheet-media">
+              <img src="../assets/img/seguridad-control.webp"
+                   alt="Personal de seguridad en un camino rural de la sierra"
+                   width="570" height="332" loading="lazy" decoding="async">
+            </figure>
+            <div class="sheet-body">
+              <p class="sheet-code"><span>SN-04</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-shield"/></svg></p>
+              <h3 id="sn-04-t" class="sheet-title">Protección y seguridad</h3>
+              <p class="sheet-text">Experiencia brindando seguridad y protección en proyectos de exploración minera, con equipos mixtos y en coordinación con las autoridades policiales.</p>
+              <dl class="spec">
+                <div><dt>Modalidad</dt><dd>Equipos mixtos</dd></div>
+                <div><dt>Coordinación</dt><dd>Autoridades policiales (PNP)</dd></div>
+              </dl>
+              <a href="#contacto" class="more" data-service="Protección y seguridad">Cotizar SN-04 <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <!-- SN-05 -->
+          <article class="sheet sheet--wide sheet--flip reveal" id="sn-05" aria-labelledby="sn-05-t">
+            <figure class="sheet-media">
+              <img src="../assets/img/servicio-medico.webp"
+                   alt="Paramédico con mascarilla atendiendo dentro de una ambulancia"
+                   width="617" height="334" loading="lazy" decoding="async">
+            </figure>
+            <div class="sheet-body">
+              <p class="sheet-code"><span>SN-05</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-medical"/></svg></p>
+              <h3 id="sn-05-t" class="sheet-title">Servicios sanitarios</h3>
+              <p class="sheet-text">Servicios médicos, alquiler de ambulancias equipadas y otros servicios sanitarios para la atención de campo en proyectos mineros.</p>
+              <dl class="spec">
+                <div><dt>Atención</dt><dd>Servicio médico</dd></div>
+                <div><dt>Unidades</dt><dd>Ambulancias equipadas</dd></div>
+                <div><dt>Campo</dt><dd>Baños portátiles</dd></div>
+              </dl>
+              <a href="#contacto" class="more" data-service="Servicios sanitarios">Cotizar SN-05 <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    <div class="hazard" aria-hidden="true"></div>
 
-    <section class="caps" aria-label="Capacidades">
+    <!-- ================= ENFOQUE ================= -->
+    <section class="section approach" id="enfoque" aria-labelledby="approach-title">
+      <div class="approach-bg" aria-hidden="true">
+        <img src="../assets/img/camioneta-andes-960.webp"
+             srcset="../assets/img/camioneta-andes-960.webp 960w, ../assets/img/camioneta-andes.webp 1280w"
+             sizes="100vw" alt="" width="1280" height="960" loading="lazy" decoding="async">
+      </div>
       <div class="wrap">
-        <ul>
-          <li><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-mountain"/></svg><small>SN-01</small><b>Movimiento de tierras</b></li>
-          <li><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-excavator"/></svg><small>SN-02</small><b>Alquiler de maquinaria</b></li>
-          <li><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-truck"/></svg><small>SN-03</small><b>Camionetas 4x4</b></li>
-          <li><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-shield"/></svg><small>SN-04</small><b>Protección y seguridad</b></li>
-          <li><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-medical"/></svg><small>SN-05</small><b>Servicios sanitarios</b></li>
+        <header class="head reveal">
+          <p class="eyebrow">Seguridad · Comunidad · Ambiente</p>
+          <h2 id="approach-title" class="h2">La operación avanza cuando el entorno avanza con ella.</h2>
+          <p class="intro">Más que maquinaria: integramos la operación en campo con la gestión social desde el primer contacto.</p>
+        </header>
+        <ol class="pillars">
+          <li class="pillar pillar--green reveal">
+            <span class="code">01</span>
+            <h3>Gestión de relaciones comunitarias</h3>
+            <p>Diálogo, respeto y buen vínculo con las comunidades del área de influencia, antes, durante y después del servicio.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="code">02</span>
+            <h3>Seguridad en las operaciones</h3>
+            <p>Personal calificado, equipos mixtos y coordinación con las autoridades para proteger a las personas y al proyecto.</p>
+          </li>
+          <li class="pillar pillar--green reveal">
+            <span class="code">03</span>
+            <h3>Cuidado del medio ambiente</h3>
+            <p>Operamos minimizando nuestro impacto en el territorio, en línea con un desarrollo minero sostenible.</p>
+          </li>
+          <li class="pillar reveal">
+            <span class="code">04</span>
+            <h3>Logística para zonas andinas</h3>
+            <p>Transporte, equipos y atención de campo preparados para operar en las condiciones de la sierra.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= EMPRESA ================= -->
+    <section class="section company" id="empresa" aria-labelledby="company-title">
+      <div class="wrap company-grid">
+        <div class="company-copy reveal">
+          <p class="eyebrow">Empresa</p>
+          <h2 id="company-title" class="h2">Una empresa peruana que conecta realidades.</h2>
+          <p class="intro">Brindamos soluciones integrales para la industria minera, especializados en servicios para la fase de exploración. Integramos capacidad técnica, operativa y social para que cada proyecto avance de la mano del territorio y de su gente.</p>
+          <dl class="spec spec--caps">
+            <div><dt>Técnica</dt><dd>Operadores calificados, maquinaria y supervisión permanente en campo.</dd></div>
+            <div><dt>Operativa</dt><dd>Logística, transporte 4x4 y servicios de apoyo para campañas de exploración.</dd></div>
+            <div><dt class="is-green">Social</dt><dd>Diálogo y buenas relaciones con las comunidades del área de influencia.</dd></div>
+          </dl>
+        </div>
+
+        <div class="company-side">
+          <figure class="company-photo reveal">
+            <img src="../assets/img/ingenieros.webp" alt="Profesionales con casco y chaleco revisando planos en campo" width="400" height="400" loading="lazy" decoding="async">
+          </figure>
+          <article class="mv mv--mission reveal">
+            <h3><span class="code">M</span> Misión</h3>
+            <p>Generar soluciones integrales para el desarrollo sostenible de la industria minera, priorizando el cuidado del medio ambiente, las buenas relaciones con la comunidad y la seguridad.</p>
+          </article>
+          <article class="mv mv--vision reveal">
+            <h3><span class="code">V</span> Visión</h3>
+            <p>Ser una empresa líder y reconocida en el mercado nacional, con capacidad de ampliar nuestros servicios a mercados internacionales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VALORES ================= -->
+    <section class="section values" id="valores" aria-labelledby="values-title">
+      <div class="wrap">
+        <header class="head head--split reveal">
+          <div>
+            <p class="eyebrow">Valores</p>
+            <h2 id="values-title" class="h2">Siete principios en cada jornada de campo.</h2>
+          </div>
+          <p class="intro">El desarrollo de nuestras actividades se sustenta en estos valores, presentes en cada decisión operativa y en cada conversación con la comunidad.</p>
+        </header>
+        <ul class="matrix">
+          <li class="cell reveal"><span class="code">V/01</span><h3>Eficiencia</h3><p>Resultados oportunos con el uso responsable de los recursos.</p></li>
+          <li class="cell reveal"><span class="code">V/02</span><h3>Responsabilidad</h3><p>Cumplimos cada compromiso asumido con clientes y comunidades.</p></li>
+          <li class="cell reveal"><span class="code">V/03</span><h3>Cuidado del medio ambiente</h3><p>Operamos minimizando nuestro impacto en el territorio.</p></li>
+          <li class="cell reveal"><span class="code">V/04</span><h3>Trabajo en equipo</h3><p>Sumamos capacidades para llegar más lejos, juntos.</p></li>
+          <li class="cell reveal"><span class="code">V/05</span><h3>Honradez</h3><p>Transparencia y ética en cada relación.</p></li>
+          <li class="cell reveal"><span class="code">V/06</span><h3>Protección de la salud</h3><p>La integridad de las personas está primero.</p></li>
+          <li class="cell cell--key reveal"><span class="code">V/07</span><h3>Buenas relaciones con el entorno</h3><p>Construimos confianza con las comunidades del área de influencia: es el corazón de la gestión social y de nuestro nombre.</p></li>
         </ul>
       </div>
     </section>
 
-    <section class="company section" id="empresa">
-      <div class="wrap">
-        <div class="reveal">
-          <span class="label">Empresa</span>
-          <h2>Soluciones integrales con <span class="y">raíces peruanas</span>.</h2>
-          <p class="lead">Somos una empresa peruana dedicada a brindar soluciones integrales para la industria minera, especializados en servicios para la fase de exploración. Nuestro nombre lo dice: conectamos la operación con las realidades de cada territorio.</p>
-          <figure class="company-img">
-            <img src="../assets/img/ingenieros.webp" alt="Ingenieros revisando planos en una obra" width="400" height="400" loading="lazy">
-            <figcaption>Equipo en campo</figcaption>
-          </figure>
+    <!-- ================= CTA + CONTACTO ================= -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="wrap contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contacto</p>
+          <h2 id="contact-title" class="h2 cta-title">¿Inicias un proyecto de exploración minera? Conversemos.</h2>
+          <p class="intro">Cuéntanos qué necesitas y coordinamos una propuesta a la medida de tu proyecto y de su entorno.</p>
+          <ul class="channels">
+            <li><a href="https://wa.me/51943250843" target="_blank" rel="noopener"><span class="code">WhatsApp</span><strong>+51 943 250 843</strong></a></li>
+            <li><a href="tel:+51943250843"><span class="code">Teléfono</span><strong>+51 943 250 843</strong></a></li>
+            <li><a href="mailto:socialnexeirl@gmail.com"><span class="code">Correo</span><strong>socialnexeirl@gmail.com</strong></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Av.%20F%C3%A1tima%20161%2C%20Urb.%20La%20Merced%2C%20Trujillo%2C%20La%20Libertad%2C%20Per%C3%BA" target="_blank" rel="noopener"><span class="code">Oficina</span><strong>Av. Fátima #161, Urb. La Merced, Trujillo, La Libertad</strong></a></li>
+          </ul>
         </div>
-        <div class="mv reveal">
-          <article>
-            <h3><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-target"/></svg> Misión</h3>
-            <p>Generar soluciones integrales para el desarrollo sostenible de la industria minera, priorizando el cuidado del medio ambiente, las buenas relaciones con la comunidad y la seguridad.</p>
-          </article>
-          <article>
-            <h3><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-eye"/></svg> Visión</h3>
-            <p>Ser una empresa líder y reconocida en el mercado nacional, con capacidad de ampliar nuestros servicios a mercados internacionales.</p>
-          </article>
-          <article>
-            <h3><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-handshake"/></svg> Gestión social</h3>
-            <p>Cada servicio se ejecuta cuidando el vínculo con las comunidades del área de influencia: diálogo, respeto y buenas relaciones con el entorno.</p>
-          </article>
-        </div>
-      </div>
-    </section>
 
-    <section class="fleet section" id="flota">
-      <div class="wrap">
-        <div class="fleet-head reveal">
-          <div>
-            <span class="label">Servicios y flota</span>
-            <h2 style="margin-top:18px">Capacidad operativa<br>para el campo.</h2>
+        <form class="form reveal" id="contact-form" novalidate aria-labelledby="form-title">
+          <div class="form-head">
+            <p class="code">Solicitud de cotización</p>
+            <h3 id="form-title">Cuéntanos sobre tu proyecto</h3>
+            <p>Al enviar se abrirá WhatsApp con tu mensaje listo.</p>
           </div>
-          <p>Unidades y equipos preparados conforme a los estándares más exigentes de las empresas mineras.</p>
-        </div>
-        <div class="fleet-grid">
-          <article class="unit u1 reveal">
-            <div class="unit-img"><img src="../assets/img/movimiento-tierras.webp" alt="Excavadora en movimiento de tierras" width="1600" height="908" loading="lazy"><span class="unit-code">SN-01</span></div>
-            <div class="unit-body">
-              <h3>Movimiento de tierras</h3>
-              <p>Habilitación de accesos, plataformas y explanaciones para campamentos y sondajes.</p>
-              <ul class="specs"><li><span>Alcance</span><span>Accesos · Plataformas</span></li><li><span>Personal</span><span>Operadores calificados</span></li></ul>
+          <div class="form-row">
+            <div class="field">
+              <label for="c-name">Nombre <span class="req" aria-hidden="true">*</span></label>
+              <input id="c-name" name="name" type="text" required autocomplete="name" aria-describedby="c-name-error">
+              <p class="field-error" id="c-name-error" aria-live="polite"></p>
             </div>
-          </article>
-          <article class="unit u2 reveal">
-            <div class="unit-img"><img src="../assets/img/excavadora.webp" alt="Excavadora amarilla" width="613" height="409" loading="lazy"><span class="unit-code">SN-02</span></div>
-            <div class="unit-body">
-              <h3>Alquiler de maquinaria</h3>
-              <p>Equipo pesado para obras de exploración y mantenimiento de vías.</p>
-              <ul class="specs"><li><span>Equipos</span><span>Motoniveladora · Retroexcavadora</span></li><li><span></span><span>Excavadora · Rodillo</span></li><li><span>Agua</span><span>Cisterna</span></li></ul>
+            <div class="field">
+              <label for="c-company">Empresa <span class="opt">(opcional)</span></label>
+              <input id="c-company" name="company" type="text" autocomplete="organization">
             </div>
-          </article>
-          <article class="unit u3 reveal">
-            <div class="unit-img"><img src="../assets/img/camioneta-playa.webp" alt="Camioneta 4x4 equipada" width="599" height="402" loading="lazy"><span class="unit-code">SN-03</span></div>
-            <div class="unit-body">
-              <h3>Camionetas 4x4</h3>
-              <p>Unidades equipadas para un transporte eficiente en actividades de exploración minera.</p>
-              <ul class="specs"><li><span>Tracción</span><span>4x4</span></li><li><span>Estándar</span><span>Minero</span></li></ul>
-            </div>
-          </article>
-          <article class="unit u4 reveal">
-            <div class="unit-img"><img src="../assets/img/seguridad-control.webp" alt="Control de seguridad en camino rural" width="570" height="332" loading="lazy"><span class="unit-code">SN-04</span></div>
-            <div class="unit-body">
-              <h3>Protección y seguridad</h3>
-              <p>Seguridad en proyectos de exploración con equipos mixtos.</p>
-              <ul class="specs"><li><span>Equipos</span><span>Mixtos</span></li><li><span>Coordinación</span><span>Autoridades policiales</span></li></ul>
-            </div>
-          </article>
-          <article class="unit u5 reveal">
-            <div class="unit-img"><img src="../assets/img/ambulancia.webp" alt="Ambulancia equipada" width="1600" height="1102" loading="lazy"><span class="unit-code">SN-05</span></div>
-            <div class="unit-body">
-              <h3>Servicios sanitarios</h3>
-              <p>Atención de campo para proyectos mineros.</p>
-              <ul class="specs"><li><span>Médico</span><span>Servicios médicos</span></li><li><span>Unidades</span><span>Ambulancias equipadas</span></li><li><span>Campo</span><span>Baños portátiles</span></li></ul>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="safety">
-      <div class="safety-bg"><img src="../assets/img/seguridad.webp" alt="" width="1136" height="960" loading="lazy"></div>
-      <div class="wrap reveal">
-        <span class="label">Seguridad · Comunidad · Ambiente</span>
-        <h2>La operación avanza<br>cuando el <span class="y">entorno</span> avanza con ella.</h2>
-        <p>Priorizamos el cuidado del medio ambiente, las buenas relaciones con la comunidad y la seguridad de cada persona en campo.</p>
-        <a href="#contacto" class="btn btn-y">Planifiquemos tu campaña <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
-      </div>
-    </section>
-    <div class="hazard" aria-hidden="true"></div>
-
-    <section class="section" id="valores">
-      <div class="wrap">
-        <div class="reveal">
-          <span class="label">Valores</span>
-          <h2 style="margin-top:18px">Siete principios.<br><span class="stroke">Cero atajos.</span></h2>
-        </div>
-        <div class="values-grid">
-          <div class="val reveal"><span class="n">/01</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-gauge"/></svg><h3>Eficiencia</h3></div>
-          <div class="val reveal"><span class="n">/02</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-check"/></svg><h3>Responsabilidad</h3></div>
-          <div class="val reveal"><span class="n">/03</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-scale"/></svg><h3>Honradez</h3></div>
-          <div class="val reveal"><span class="n">/04</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-users"/></svg><h3>Trabajo en equipo</h3></div>
-          <div class="val reveal"><span class="n">/05</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-leaf"/></svg><h3>Cuidado del medio ambiente</h3></div>
-          <div class="val reveal"><span class="n">/06</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-heart"/></svg><h3>Protección de la salud</h3></div>
-          <div class="val wide reveal"><span class="n">/07</span><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-handshake"/></svg><h3>Buenas relaciones con el entorno</h3></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact section" id="contacto">
-      <div class="wrap">
-        <div class="reveal">
-          <span class="label">Contacto</span>
-          <h2>¿Listo para<br>salir a campo?</h2>
-          <p style="color:var(--muted)">Envíanos los detalles de tu proyecto y respondemos con una propuesta.</p>
-          <div class="channels">
-            <a href="mailto:socialnexeirl@gmail.com"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-mail"/></svg><span><small>Correo</small><b>socialnexeirl@gmail.com</b></span><svg class="icon go" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
-            <a href="tel:+51943250843"><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-phone"/></svg><span><small>Teléfono</small><b>+51 943 250 843</b></span><svg class="icon go" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></a>
-            <div><svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-pin"/></svg><span><small>Oficina</small><b>Av. Fátima #161, Urb. La Merced – Trujillo, La Libertad</b></span><span></span></div>
           </div>
-        </div>
-        <form class="form reveal" id="contact-form">
-          <p class="title">// Solicitud de servicio</p>
-          <div><label for="n">Nombre / Empresa</label><input id="n" name="name" required autocomplete="organization"></div>
-          <div><label for="s">Servicio</label>
-            <select id="s" name="service"><option>SN-01 · Movimiento de tierras</option><option>SN-02 · Alquiler de maquinaria</option><option>SN-03 · Camionetas 4x4</option><option>SN-04 · Protección y seguridad</option><option>SN-05 · Servicios sanitarios</option><option>Varios</option></select>
+          <div class="field">
+            <label for="c-service">Servicio de interés <span class="req" aria-hidden="true">*</span></label>
+            <div class="select-wrap">
+              <select id="c-service" name="service" required aria-describedby="c-service-error">
+                <option value="" selected disabled>Selecciona un servicio</option>
+                <option>Movimiento de tierras</option>
+                <option>Alquiler de maquinaria</option>
+                <option>Alquiler de camionetas 4x4</option>
+                <option>Protección y seguridad</option>
+                <option>Servicios sanitarios</option>
+                <option>Varios servicios</option>
+              </select>
+            </div>
+            <p class="field-error" id="c-service-error" aria-live="polite"></p>
           </div>
-          <div><label for="m">Detalles del proyecto</label><textarea id="m" name="message" required placeholder="Ubicación, fechas, cantidad de unidades…"></textarea></div>
-          <button class="btn btn-y" type="submit">Enviar por WhatsApp <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-arrow"/></svg></button>
-          <small>Se abrirá WhatsApp con tu solicitud lista para enviar.</small>
+          <div class="field">
+            <label for="c-msg">Mensaje <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="c-msg" name="message" rows="5" required aria-describedby="c-msg-hint c-msg-error" placeholder="Ubicación del proyecto, fechas estimadas y requerimientos…"></textarea>
+            <p class="field-hint" id="c-msg-hint">Incluye ubicación, fechas y alcance para una respuesta más precisa.</p>
+            <p class="field-error" id="c-msg-error" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn btn-y btn-block">
+            <svg class="icon" aria-hidden="true"><use href="../assets/icons.svg#i-whatsapp"/></svg>
+            Enviar por WhatsApp
+          </button>
+          <p class="form-note"><span class="req" aria-hidden="true">*</span> Campos obligatorios.</p>
+          <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- ================= FOOTER ================= -->
   <footer class="ftr">
-    <div class="wrap">
-      <p class="giant" aria-hidden="true">SOCIALNEXUS</p>
-      <div class="row">
-        <span>© <span id="year">2026</span> Social Nexus E.I.R.L. — ¡Conectando realidades!</span>
-        <nav class="versions" aria-label="Versiones del diseño">DISEÑO: <a href="../v1/">A</a><a href="../v2/">B</a><a href="./" aria-current="page">C</a></nav>
+    <div class="wrap ftr-grid">
+      <div class="ftr-brand">
+        <a href="#inicio" class="brand" aria-label="Social Nexus E.I.R.L. – ir al inicio">
+          <span class="brand-plate"><img src="../assets/img/logo-simbolo.webp" alt="" width="270" height="183" loading="lazy"></span>
+          <span class="brand-text"><span class="brand-name">Social Nexus <span class="muted">E.I.R.L.</span></span><span class="brand-tag">¡Conectando realidades!</span></span>
+        </a>
+        <p>Servicios integrales para la fase de exploración minera, con gestión social, seguridad y cuidado del medio ambiente.</p>
       </div>
+      <nav class="ftr-col" aria-label="Servicios">
+        <h2 class="ftr-title">Servicios</h2>
+        <ul>
+          <li><a href="#sn-01">SN-01 · Movimiento de tierras</a></li>
+          <li><a href="#sn-02">SN-02 · Alquiler de maquinaria</a></li>
+          <li><a href="#sn-03">SN-03 · Camionetas 4x4</a></li>
+          <li><a href="#sn-04">SN-04 · Protección y seguridad</a></li>
+          <li><a href="#sn-05">SN-05 · Servicios sanitarios</a></li>
+        </ul>
+      </nav>
+      <nav class="ftr-col" aria-label="Navegación del pie de página">
+        <h2 class="ftr-title">Empresa</h2>
+        <ul>
+          <li><a href="#enfoque">Enfoque</a></li>
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="ftr-col">
+        <h2 class="ftr-title">Contacto</h2>
+        <address>
+          <ul>
+            <li><a href="mailto:socialnexeirl@gmail.com">socialnexeirl@gmail.com</a></li>
+            <li><a href="tel:+51943250843">+51 943 250 843</a></li>
+            <li>Av. Fátima #161, Urb. La Merced<br>Trujillo, La Libertad, Perú</li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="wrap ftr-bottom">
+      <p>© <span id="year">2026</span> Social Nexus E.I.R.L. Todos los derechos reservados.</p>
+      <a href="../comparar/" class="ftr-compare">Propuesta C · Comparar propuestas</a>
     </div>
   </footer>
 
-  <a class="wa" href="https://wa.me/51943250843" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg aria-hidden="true"><use href="../assets/icons.svg#i-whatsapp"/></svg></a>
-
   <script>
-    (function () {
-      var hdr = document.querySelector('.hdr');
-      var btn = document.querySelector('.burger');
-      var nav = document.getElementById('nav');
-      var use = btn.querySelector('use');
-      function setMenu(open) {
-        nav.classList.toggle('open', open);
-        btn.setAttribute('aria-expanded', open);
-        btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
-        use.setAttribute('href', '../assets/icons.svg#' + (open ? 'i-close' : 'i-menu'));
-        if (open) hdr.classList.add('solid'); else onScroll();
+  (function () {
+    'use strict';
+    var WA = 'https://wa.me/51943250843';
+    var doc = document.documentElement;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /* Header al hacer scroll */
+    var hdr = document.getElementById('hdr');
+    function onScroll() { hdr.classList.toggle('is-scrolled', window.scrollY > 8); }
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+
+    /* Menú móvil accesible */
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('nav');
+    var label = toggle.querySelector('.nav-toggle-label');
+    function isOpen() { return doc.classList.contains('menu-open'); }
+    function setMenu(open, restore) {
+      doc.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      label.textContent = open ? 'Cerrar' : 'Menú';
+      if (open) { var a = nav.querySelector('a'); if (a) a.focus(); }
+      else if (restore) toggle.focus();
+    }
+    toggle.addEventListener('click', function () { setMenu(!isOpen(), true); });
+    nav.addEventListener('click', function (e) { if (e.target.closest('a') && isOpen()) setMenu(false); });
+    document.addEventListener('keydown', function (e) {
+      if (!isOpen()) return;
+      if (e.key === 'Escape') { setMenu(false, true); return; }
+      if (e.key === 'Tab') {
+        var f = Array.prototype.slice.call(nav.querySelectorAll('a')).concat([toggle]);
+        var i = f.indexOf(document.activeElement);
+        if (e.shiftKey && i <= 0) { e.preventDefault(); f[f.length - 1].focus(); }
+        else if (!e.shiftKey && i === f.length - 1) { e.preventDefault(); f[0].focus(); }
       }
-      function onScroll() { hdr.classList.toggle('solid', scrollY > 40 || nav.classList.contains('open')); }
-      btn.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
-      nav.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
-      window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    });
+    var mq = window.matchMedia('(min-width: 1080px)');
+    (mq.addEventListener ? mq.addEventListener.bind(mq, 'change') : mq.addListener.bind(mq))(function (e) { if (e.matches && isOpen()) setMenu(false); });
 
-      var els = document.querySelectorAll('.reveal');
-      if ('IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (es) {
-          es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-        }, { threshold: 0.1 });
-        els.forEach(function (el) { io.observe(el); });
-      } else { els.forEach(function (el) { el.classList.add('in'); }); }
+    /* Sección activa + aparición discreta */
+    if ('IntersectionObserver' in window) {
+      var links = Array.prototype.slice.call(document.querySelectorAll('.nav-link'));
+      var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+      targets.push(document.getElementById('inicio'));
+      var spy = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          links.forEach(function (a) {
+            if (a.getAttribute('href') === '#' + en.target.id) a.setAttribute('aria-current', 'true');
+            else a.removeAttribute('aria-current');
+          });
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      targets.forEach(function (t) { if (t) spy.observe(t); });
 
-      document.getElementById('year').textContent = new Date().getFullYear();
+      if (!reduceMotion) {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+      } else { doc.classList.add('no-reveal'); }
+    } else { doc.classList.add('no-reveal'); }
 
-      document.getElementById('contact-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        var f = e.target;
-        var txt = 'Hola Social Nexus, soy ' + f.name.value.trim() + '.\nServicio: ' + f.service.value + '\n\n' + f.message.value.trim();
-        window.open('https://wa.me/51943250843?text=' + encodeURIComponent(txt), '_blank', 'noopener');
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* Formulario → WhatsApp */
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('form-status');
+    var fields = {
+      name: { el: form.elements.name, msg: 'Indica tu nombre (mínimo 2 caracteres).', min: 2 },
+      service: { el: form.elements.service, msg: 'Selecciona el servicio de tu interés.' },
+      message: { el: form.elements.message, msg: 'Cuéntanos brevemente tu requerimiento (mínimo 10 caracteres).', min: 10 }
+    };
+    function validate(k) {
+      var f = fields[k], v = f.el.value.trim();
+      var ok = f.min ? v.length >= f.min : v !== '';
+      var field = f.el.closest('.field');
+      f.el.setAttribute('aria-invalid', String(!ok));
+      field.classList.toggle('is-invalid', !ok);
+      field.classList.toggle('is-valid', ok);
+      document.getElementById(f.el.id + '-error').textContent = ok ? '' : f.msg;
+      return ok;
+    }
+    Object.keys(fields).forEach(function (k) {
+      var el = fields[k].el;
+      el.addEventListener('blur', function () { if (el.value.trim() !== '' || el.hasAttribute('aria-invalid')) validate(k); });
+      el.addEventListener(k === 'service' ? 'change' : 'input', function () { if (el.hasAttribute('aria-invalid')) validate(k); });
+    });
+    document.querySelectorAll('[data-service]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        var sel = fields.service.el, val = a.getAttribute('data-service');
+        for (var i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].text === val) { sel.selectedIndex = i; if (sel.hasAttribute('aria-invalid')) validate('service'); break; }
+        }
       });
-    })();
+    });
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var bad = null;
+      Object.keys(fields).forEach(function (k) { if (!validate(k) && !bad) bad = fields[k].el; });
+      status.hidden = false;
+      if (bad) {
+        status.className = 'form-status is-error';
+        status.textContent = 'Revisa los campos marcados para continuar.';
+        bad.focus();
+        return;
+      }
+      var company = form.elements.company.value.trim();
+      var txt = 'Hola Social Nexus, soy ' + form.elements.name.value.trim() +
+        (company ? ' de ' + company : '') + '.\n' +
+        'Servicio de interés: ' + form.elements.service.value + '\n\n' +
+        form.elements.message.value.trim();
+      var url = WA + '?text=' + encodeURIComponent(txt);
+      // Sin 'noopener' en features: con él window.open() devuelve siempre null
+      var win = window.open(url, '_blank');
+      if (win) { try { win.opener = null; } catch (err) {} }
+      status.className = 'form-status is-success';
+      status.innerHTML = '';
+      var s = document.createElement('strong');
+      s.textContent = 'Tu mensaje está listo en WhatsApp.';
+      var p = document.createElement('span');
+      p.appendChild(document.createTextNode(win ? ' Solo falta enviarlo desde la conversación. ' : ' Si no se abrió automáticamente, '));
+      var a = document.createElement('a');
+      a.href = url; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = win ? 'Abrir de nuevo' : 'abre WhatsApp aquí';
+      p.appendChild(a); status.appendChild(s); status.appendChild(p);
+    });
+  })();
   </script>
 </body>
 </html>
